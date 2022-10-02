@@ -24,7 +24,7 @@ A simple select component for React Native.
 ## Installation (Not available yet)
 
 ```bash
-npm install react-native-select
+npm install react-native-multi-options
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ npm install react-native-select
 ```jsx
 import React from 'react';
 import { View } from 'react-native';
-import Select from 'react-native-select';
+import Select from 'react-native-multi-options';
 
 const options = [
   { label: 'One', value: 'one' },

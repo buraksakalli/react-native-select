@@ -1,10 +1,10 @@
 # React Native Select
 
-[![npm version](https://badge.fury.io/js/react-native-select.svg)](https://badge.fury.io/js/react-native-select)
+[![npm version](https://badge.fury.io/js/react-native-multi-options.svg)](https://badge.fury.io/js/react-native-multi-options)
 
 A simple select component for React Native.
 
-![react-native-select](https://user-images.githubusercontent.com/10114716/193332497-5d4fc808-f5ac-475e-b7c7-f0c742673296.png)
+![react-native-multi-options](https://user-images.githubusercontent.com/10114716/193332497-5d4fc808-f5ac-475e-b7c7-f0c742673296.png)
 
 ## TODO
 

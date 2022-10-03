@@ -1,18 +1,6 @@
 import React from 'react';
-import { Text, TouchableOpacity, StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-  button: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 3,
-    padding: 5,
-    margin: 5,
-    flexDirection: 'row',
-    borderWidth: 1,
-  },
-});
+import { Text, TouchableOpacity } from 'react-native';
+import { styles } from './button.style';
 
 export interface ButtonInterface {
   title: string;

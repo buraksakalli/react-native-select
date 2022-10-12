@@ -12,6 +12,7 @@ export type SelectOption = {
 type ISelect = {
   search?: boolean;
   disabledOptions?: Array<SelectOption>;
+  borderColor?: string;
 };
 
 interface MultipleSelectProps extends ISelect {
@@ -40,6 +41,7 @@ export const Select: React.FC<SelectProps> = ({
   color = 'blue',
   placeholder,
   disabledOptions,
+  borderColor,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeColor, setActiveColor] = useState<string>(colorMatch(color));
@@ -74,7 +76,7 @@ export const Select: React.FC<SelectProps> = ({
     <View style={styles.wrapper}>
       <TouchableOpacity
         onBlur={() => setIsOpen(false)}
-        style={styles.container}
+        style={[styles.container, borderColor ? { borderColor } : {}]}
         activeOpacity={0.7}
         onPress={() => setIsOpen((prev) => !prev)}
       >
@@ -101,12 +103,28 @@ export const Select: React.FC<SelectProps> = ({
         <View style={styles.settings}>
           {multiple && value.length > 0 && (
             <TouchableOpacity style={styles.remove} onPress={clearOptions}>
-              <Text>&times;</Text>
+              <Text
+                style={[styles.text, borderColor ? { color: borderColor } : {}]}
+              >
+                &times;
+              </Text>
             </TouchableOpacity>
           )}
-          <View style={styles.divider} />
+          <View
+            style={[
+              styles.divider,
+              borderColor ? { backgroundColor: borderColor } : {},
+            ]}
+          />
           <TouchableOpacity onPress={() => setIsOpen((prev) => !prev)}>
-            <Text style={[styles.caret, isOpen ? styles.caretOpen : {}]}>
+            <Text
+              style={[
+                styles.text,
+                styles.caret,
+                isOpen ? styles.caretOpen : {},
+                borderColor ? { color: borderColor } : {},
+              ]}
+            >
               ^
             </Text>
           </TouchableOpacity>

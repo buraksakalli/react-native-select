@@ -11,6 +11,7 @@ export type SelectOption = {
 
 type ISelect = {
   search?: boolean;
+  disabledOptions?: Array<SelectOption>;
 };
 
 interface MultipleSelectProps extends ISelect {
@@ -38,6 +39,7 @@ export const Select: React.FC<SelectProps> = ({
   options,
   color = 'blue',
   placeholder,
+  disabledOptions,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeColor, setActiveColor] = useState<string>(colorMatch(color));
@@ -115,6 +117,10 @@ export const Select: React.FC<SelectProps> = ({
           {options.map((option) => (
             <TouchableOpacity
               onPress={(e) => {
+                if (disabledOptions?.includes(option)) {
+                  return;
+                }
+
                 e.stopPropagation();
                 selectOption(option);
                 setIsOpen(false);
@@ -125,6 +131,7 @@ export const Select: React.FC<SelectProps> = ({
                 isOptionSelected(option)
                   ? { backgroundColor: `${activeColor}24`, borderRadius: 3 }
                   : {},
+                disabledOptions?.includes(option) ? styles.disabled : {},
               ]}
             >
               <Text>{option.label}</Text>

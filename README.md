@@ -52,6 +52,7 @@ const App = () => {
         value={value}
         onChange={(option) => setValue(option)}
         disabledOptions={[options[1]]}
+        borderColor="red"
       />
     </View>
   );
@@ -76,6 +77,7 @@ const App = () => {
 | optionContainerTextStyle | Object   |           | Style object to be applied to the option container text     |
 | optionSelectedStyle      | Object   |           | Style object to be applied to the selected option           |
 | optionSelectedTextStyle  | Object   |           | Style object to be applied to the selected option text      |
+| borderColor              | String   | #999      | Border color of the container                               |
 
 ## Contributing
 

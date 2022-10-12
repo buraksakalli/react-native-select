@@ -25,6 +25,7 @@ export default function App() {
         color="red"
         placeholder="Select your favorite flavor"
         disabledOptions={[options[1]]}
+        borderColor="red"
       />
       <View style={styles.gap} />
       <Select

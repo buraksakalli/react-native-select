@@ -72,4 +72,7 @@ export const styles = StyleSheet.create({
   placeholder: {
     color: '#28282850',
   },
+  disabled: {
+    opacity: 0.5,
+  },
 });

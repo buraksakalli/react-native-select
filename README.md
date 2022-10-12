@@ -17,7 +17,7 @@ A simple select component for React Native.
 - [ ] Add support for placeholder color
 - [ ] Add tests
 - [ ] Add support for custom components
-- [ ] Add support for custom styles
+- [x] Add support for custom styles
 - [ ] Add support for custom placeholder
 - [ ] Add support for validation
 - [ ] GitHub Actions for CI/CD

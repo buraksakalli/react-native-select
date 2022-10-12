@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#28282850',
+    borderColor: '#404243',
   },
   button: {
     backgroundColor: 'green',
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
   },
   remove: {},
   divider: {
-    backgroundColor: '#28282850',
+    backgroundColor: '#404243',
     alignSelf: 'stretch',
     width: 1,
     marginHorizontal: 10,
@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
     flexWrap: 'wrap',
     marginTop: 5,
     borderWidth: 1,
-    borderColor: '#28282850',
+    borderColor: '#404243',
     borderRadius: 13,
     padding: 10,
   },
@@ -70,9 +70,12 @@ export const styles = StyleSheet.create({
     marginBottom: -5,
   },
   placeholder: {
-    color: '#28282850',
+    color: '#404243',
   },
   disabled: {
     opacity: 0.5,
+  },
+  text: {
+    color: '#404243',
   },
 });

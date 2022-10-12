@@ -24,6 +24,7 @@ export default function App() {
         onChange={(option) => setValue(option)}
         color="red"
         placeholder="Select your favorite flavor"
+        disabledOptions={[options[1]]}
       />
       <View style={styles.gap} />
       <Select

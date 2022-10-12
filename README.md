@@ -10,8 +10,8 @@ A simple select component for React Native.
 
 - [x] Add support for single selection
 - [x] Add support for multiple selections
-- [ ] Add support for disabled options
-- [ ] Add support for disabled select
+- [x] Add support for disabled options
+- [x] Add support for disabled select
 - [x] Add support for placeholder
 - [ ] Add search functionality
 - [ ] Add support for placeholder color
@@ -20,6 +20,7 @@ A simple select component for React Native.
 - [ ] Add support for custom styles
 - [ ] Add support for custom placeholder
 - [ ] Add support for validation
+- [ ] GitHub Actions for CI/CD
 
 ## Installation (Not available yet)
 
@@ -50,6 +51,7 @@ const App = () => {
         options={options}
         value={value}
         onChange={(option) => setValue(option)}
+        disabledOptions={[options[1]]}
       />
     </View>
   );

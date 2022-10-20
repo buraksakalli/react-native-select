@@ -1,6 +1,6 @@
 {
   "name": "react-native-multi-options",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "A simple select component for React Native.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

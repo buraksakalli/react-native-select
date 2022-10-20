@@ -1,2 +1,5 @@
 .circleci/
 .github/
+example/
+node_modules/
+package-lock.json
